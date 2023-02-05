@@ -28,6 +28,7 @@ class _TextFieldInputState extends State<TextFieldInput> {
           ),
           decoration: const InputDecoration(
             border: InputBorder.none,
+            counterText: '',
           ),
           onChanged: (text) => _number = text,
           maxLength: 1,

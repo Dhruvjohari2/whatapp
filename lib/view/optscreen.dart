@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whatapp_clone/colors.dart';
 import 'package:whatapp_clone/view/Homepage.dart';
+import 'package:whatapp_clone/view/logindetails.dart';
 import 'package:whatapp_clone/view/widgets/textfield.dart';
 
 class OptScreen extends StatefulWidget {
@@ -80,12 +81,12 @@ class _OptScreenState extends State<OptScreen> {
               ),
               ElevatedButton(
                 onPressed: () {
-                  // Navigator.push(
-                  //   context,
-                  //   MaterialPageRoute(
-                  //     builder: (_) =>  ,
-                  //   ),
-                  // );
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) =>  const LoginDetails(),
+                    ),
+                  );
                 },
                 style: ElevatedButton.styleFrom(backgroundColor: textColor),
                 child: Text(
