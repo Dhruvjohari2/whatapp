@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:whatapp_clone/colors.dart';
+import 'package:whatapp_clone/utils/colors.dart';
 import 'package:whatapp_clone/view/Homepage.dart';
 import 'package:whatapp_clone/view/logindetails.dart';
 import 'package:whatapp_clone/view/widgets/textfield.dart';

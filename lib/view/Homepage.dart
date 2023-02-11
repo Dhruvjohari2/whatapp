@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl_phone_field/intl_phone_field.dart';
-import 'package:whatapp_clone/colors.dart';
+import 'package:whatapp_clone/utils/colors.dart';
 import 'package:whatapp_clone/view/optscreen.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,10 +13,9 @@ class HomePage extends StatefulWidget {
 
 
 class _HomePageState extends State<HomePage> {
-  @override
-
   String phone = "";
 
+  @override
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,

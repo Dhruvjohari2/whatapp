@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:whatapp_clone/colors.dart';
+import 'package:whatapp_clone/utils/colors.dart';
+import 'package:whatapp_clone/view/topnavbar.dart';
 
 class LoginDetails extends StatefulWidget {
   const LoginDetails({Key? key}) : super(key: key);
@@ -67,8 +68,8 @@ class _LoginDetailsState extends State<LoginDetails> {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: TextFormField(
-                            style: const TextStyle(
-                              fontSize: 20,
+                            style: TextStyle(
+                              fontSize: fontSizeHeading,
                             ),
                             decoration: const InputDecoration(
                               border: InputBorder.none,
@@ -105,8 +106,8 @@ class _LoginDetailsState extends State<LoginDetails> {
                           ),
                           child: TextFormField(
                             keyboardType: TextInputType.phone,
-                            style: const TextStyle(
-                              fontSize: 20,
+                            style: TextStyle(
+                              fontSize: fontSizeHeading,
                             ),
                             decoration: const InputDecoration(
                               border: InputBorder.none,
@@ -144,8 +145,8 @@ class _LoginDetailsState extends State<LoginDetails> {
                             borderRadius: BorderRadius.circular(5),
                           ),
                           child: TextFormField(
-                            style: const TextStyle(
-                              fontSize: 20,
+                            style: TextStyle(
+                              fontSize: fontSizeHeading,
                             ),
                             decoration: const InputDecoration(
                               border: InputBorder.none,
@@ -162,6 +163,19 @@ class _LoginDetailsState extends State<LoginDetails> {
                       ],
                     ),
                   ],
+                ),
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  margin: const EdgeInsets.all(10),
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,MaterialPageRoute(builder: (_) => const TopNavbar()),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(backgroundColor: textColor),
+                    child: const Text('Next'),
+                  ),
                 ),
               ],
             ),
